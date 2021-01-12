@@ -1,0 +1,62 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text",
+      "info-card#pixel",
+      "info-card#iphone",
+      "shelf#home"
+    ]
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "VTEX New Training",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "info-card#pixel": {
+    "props": {
+      "id": "infoCardPixel",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/smartphone-bg.jpg",
+      "headline": "Presentamos el Pixel 4a",
+      "subhead": "Descubre lo que puede hacer",
+      "callToActionText": "Conocer más",
+      "callToActionUrl": "#",
+      "textAlignment": "left",
+      "blockClass": "infoCardPixel"
+    }
+  },
+  "info-card#iphone": {
+    "props": {
+      "id": "infoCardIphone",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/iphone-bg.jpg",
+      "headline": "iPhone 11",
+      "subhead": "Nada menos que todo lo que quieres",
+      "callToActionText": "Más información >",
+      "callToActionUrl": "#",
+      "textAlignment": "center",
+      "callToActionMode": "link",
+      "blockClass": "infoCardIphone"
+    }
+  },
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Más vendidos"
+      }
+    }
+  }
+}
